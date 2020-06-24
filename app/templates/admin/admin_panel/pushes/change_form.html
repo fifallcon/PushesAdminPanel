@@ -1,0 +1,27 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+
+{% block field_sets %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/admin_panel/pushes.css' %}">
+<script type="text/javascript" src="{% static 'js/admin_panel/pushes.js' %}"></script>
+
+<div class="pushesContent">
+    <div class="pushesContentCell">
+        {% for fieldset in adminform %}
+          {% include "admin/includes/fieldset.html" %}
+        {% endfor %}
+    </div>
+    <div class="pushesContentCell pushesContentPreview">
+        <label class="required">Предпросмотр устройства</label>
+        <div class="pushesContentImg">
+            <div class="pushesContentItem pushesContentTitleAndroid"></div>
+            <div class="pushesContentItem pushesContentTextAndroid"></div>
+
+            <div class="pushesContentItem pushesContentTitleIphone"></div>
+            <div class="pushesContentItem pushesContentTextIphone"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

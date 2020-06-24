@@ -1,0 +1,55 @@
+.pushesContent{
+    display: flex;
+    background-color: white;
+}
+
+.pushesContentCell{
+}
+
+.pushesContentPreview{
+    width: 520px;
+    height: 580px;
+    margin: 20px;
+    margin-top: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.pushesContentImg{
+    background: url(img/pushes_template.png) no-repeat;
+    min-width: 500px;
+    min-height: 500px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.pushesContentItem{
+    position: absolute;
+}
+
+.pushesContentTitleAndroid{
+    top: 160px;
+    left: 100px;
+    font-weight: bold;
+}
+.pushesContentTextAndroid{
+    top: 180px;
+    left: 100px;
+    max-width: 360px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.pushesContentTitleIphone{
+    top: 350px;
+    left: 85px;
+    font-weight: bold;
+}
+.pushesContentTextIphone{
+    top: 370px;
+    left: 85px;
+    max-width: 360px;
+    max-height: 61px;
+    overflow: hidden;
+}
