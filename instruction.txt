@@ -9,3 +9,9 @@ docker-compose exec web python manage.py migrate
 
 # static
 docker-compose exec web python manage.py collectstatic
+
+# create first super user
+docker-compose exec web python manage.py createsuperuser
+
+
+
