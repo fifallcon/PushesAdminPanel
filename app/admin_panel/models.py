@@ -1,6 +1,7 @@
 from django.db import models
 
-
+# две модели,
+# поля строго по ТЗ
 class Options(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField("Название опции", max_length=200)

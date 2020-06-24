@@ -1,5 +1,10 @@
+cd PushesAdminPanel/
+
+# docker start
+docker-compose up -d --build
+
 # migration
-docker-compose exec web python manage.py makemigratios
+docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate
 
 # static
