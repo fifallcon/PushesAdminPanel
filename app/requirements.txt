@@ -1,4 +1,4 @@
-Django==2.2
+Django==2.2.22
 psycopg2-binary==2.8.5
 django-adminlte2==0.4.3
 gunicorn==20.0.4
